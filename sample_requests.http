@@ -1,0 +1,50 @@
+### Health
+GET http://127.0.0.1:8000/health
+
+### Create customer
+POST http://127.0.0.1:8000/customers
+Content-Type: application/json
+
+{
+  "email": "eesa.sample@example.com",
+  "full_name": "Eesa Sample"
+}
+
+### Register kit
+POST http://127.0.0.1:8000/kits/register
+Content-Type: application/json
+
+{
+  "kit_code": "KIT-AB12CD34",
+  "customer_id": 1
+}
+
+### Create processing job
+POST http://127.0.0.1:8000/processing-jobs
+Content-Type: application/json
+
+{
+  "kit_id": 1,
+  "pipeline_version": "v1"
+}
+
+### Mark processing succeeded
+PATCH http://127.0.0.1:8000/processing-jobs/1
+Content-Type: application/json
+
+{
+  "status": "succeeded"
+}
+
+### Create report
+POST http://127.0.0.1:8000/reports
+Content-Type: application/json
+
+{
+  "kit_id": 1,
+  "report_version": "v1",
+  "summary": "Synthetic wellness report generated for portfolio demonstration only."
+}
+
+### Dashboard
+GET http://127.0.0.1:8000/customers/1/dashboard
