@@ -2,7 +2,6 @@
 
 A small, synthetic backend project designed to demonstrate API design, relational data modeling, validation, integration flow, testing, and technical documentation.
 
-> **Important:** This project uses only fictional/synthetic data. It is not connected to EvoDNA, does not represent EvoDNA's internal architecture, and contains no real genetic, health, or customer data.
 
 ## What it demonstrates
 
@@ -149,9 +148,3 @@ Example response:
   "status": "registered"
 }
 ```
-
-## Personal contribution statement template
-
-> I built this synthetic backend integration sample to demonstrate how I approach API flows, data relationships, validation, testing, and technical documentation. I designed the customer-to-kit-to-processing-to-report workflow, implemented the REST endpoints and relational schema, added validation and error handling, and documented the integration map and data model. I used AI as a development assistant for review and debugging, but I ran, reviewed, and can explain the project structure and design decisions myself.
-
-Before submitting this statement, edit it so it accurately describes what you personally reviewed, changed, ran, and can explain.
